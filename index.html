@@ -32,22 +32,22 @@
           </td>
           <td style="padding:2.5%;width:67%;vertical-align:middle">
             <p>
-              I am now a Research Assistant in Robotics (Learning-based control) at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology(Sustech)</a>, 
+              I am now a Research Assistant in Robotics (Learning-based Control) at <a href="https://www.sustech.edu.cn/">Southern University of Science and Technology(SUSTech)</a>, 
               advised by <a href='https://zjui.intl.zju.edu.cn/en/team/teacherinfo/2461'>Prof. Hua CHEN</a> and <a href='https://www.sustech.edu.cn/en/faculties/zhangwei-2.html'>Prof. Wei ZHANG</a>. 
-              My research interest lies at the intersection of Deep Reinforement Learning and Robotics. Specifically, for example, I am interested in learning whole-body control scheme to do loco-manipulation for wheeled quadrupedal manipulator.
+              My research interest lies in the intersection of Deep Reinforcement Learning and Robotics. Specifically, for example, I am interested in learning a whole-body control scheme for loco-manipulation of wheeled quadrupedal manipulator.
             </p>
             <p>
-              Currently, I'm working on learning a omni-directional task space pose tracking policy to do loco-manipulation at <a href="https://www.wzhanglab.site/"> CLEAR Lab</a>.
+              Currently, I'm working on learning an omni-directional task space pose tracking policy to do loco-manipulation at <a href="https://www.wzhanglab.site/"> CLEAR Lab</a>.
                I obtained my B.E. in Automation from <a href="http://en.hit.edu.cn/">Harbin Institute of Technology, Shenzhen</a> in 2024.
             </p>
             <p>
-              I am also eager to venture into diverse fields, e.g. I am now feel interested in model-based RL, AMP \& ASE, 
+              I am also eager to venture into diverse fields, e.g. I am now interested in model-based RL, AMP & ASE, 
               learning based perceptive loco-manipulation, transformer/diffusion policy application on quadrupeds/humanoid.
             </p>
             <p style="text-align:center">
-              <a href="data/CV_Kaiwen_Jiang.pdf">CV</a> &nbsp/&nbsp
+              <a href="data/CV_Kaiwen_Jiang.pdf">CV</a> <!-- &nbsp/&nbsp-->
 <!--                <a href="https://scholar.google.com/citations?user=qrgIuiEAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp-->
-              <a href="https://github.com/wangzishuo2002">Github</a>
+              <!-- <a href="https://github.com/wangzishuo2002">Github</a> -->
 <!--                <a href="https://twitter.com/anxingxiao">Twitter</a>--></p>
             </td>
         </tr>
@@ -61,7 +61,7 @@
           <td style="padding:20px;width:100%;vertical-align:middle">
             <heading>Research</heading>
             <p style="margin:15px 0 -5px 0px;">
-              My current research topics cover 2D & 3D visual understanding, navigation, and autonomous system design. My research vision is to develop intelligent robots capable of perceiving and acting sensibly in dynamic, uncertain real-world environment.
+              My current research topics cover the following areas: numerical algorithm, optimal control, MPC, deep reinforcement learning and its applications in robotics.
         </tr>
         </tbody></table>
 
@@ -71,32 +71,31 @@
         <tr onmouseout="spot_stop()" onmouseover="spot_start()" >
           <td style="padding:20px;width:30%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='images/spot.png' style="width:100%; height:100%; max-width:100%">
-                <img src='images/spot.png' style="width:100%; height:100%; max-width:100%">
+              <div class="two" id='images/cup_picking.png' style="width:100%; height:100%; max-width:100%">
+                <img src='images/cup_picking.png' style="width:100%; height:100%; max-width:100%">
               </div>
-              <img src='images/spot.gif' style="width:100%; height:100%; max-width:100%">
+              <img src='images/cup_picking.gif' style="width:100%; height:100%; max-width:100%">
             </div>
             <script type="text/javascript">
               function spot_start() {
-                document.getElementById('images/spot.png').style.opacity = "0";
+                document.getElementById('images/cup_picking.png').style.opacity = "0";
               }
               function spot_stop() {
-                document.getElementById('images/spot.png').style.opacity = "1";
+                document.getElementById('images/cup_picking.png').style.opacity = "1";
               }
               spot_stop()
             </script>
           </td>
           <td style="padding:20px;width:70%;vertical-align:middle">
-            <papertitle>Failure recovery framework for robust navigation with learned controllers </papertitle>
+            <papertitle>Learning Whole-Body Loco-Manipulation</papertitle>
             <p style="margin:10px 0 5px 0px;font-size: 15px;">
-              Designed a comprehensive failure recovery framework consisting of perturb and ask for help, that empowers
-              learned controllers to 1) sense anomalous situations, 2) recover themselves,
-              3) if they cannot recover, fail gracefully. (More in progress)</br></br>
-              The video shows some preliminary results in the context of abrupt observation alterations and instances
-              where the pathway is obstructed. The recovery is guided in two ways:
-              1) we use our anomaly metric to measure recovery success,
-              2) we backpropagate the anomaly metric then use Grad-CAM to obtain an anomaly localisation heatmap to
-              guide the selection of recovery actions.
+              We develop a whole-body policy for loco-manipulation of wheeled quadrupedal manipulator, which can track a desired 6D pose of end-effector. This policy has several features: 
+              1) it is omni-directional, 2) it is robust to external disturbances,
+               3) it is an end-to-end scheme that only requires the pose command from user, then the policy will automatically determine the movement of base as well as the manipulator to track the desired pose.
+               4) The real world experiments demonstrate
+               smooth and precise tracking performance, achieving state-of-the-
+               art tracking position error of less than 5 cm, and rotation error
+               of less than 0.1 rad.
             </p>
           </td>
         </tr>
@@ -104,53 +103,52 @@
         <tr onmouseout="bulkcarrier_stop()" onmouseover="bulkcarrier_start()" >
           <td style="padding:20px;width:30%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='images/bulkcarrier.png' style="width:100%; height:100%; max-width:100%">
-                <img src='images/bulkcarrier.png' style="width:100%; height:100%; max-width:100%">
+              <div class="two" id='images/smooth_loco_mani.png' style="width:100%; height:100%; max-width:100%">
+                <img src='images/smooth_loco_mani.png' style="width:100%; height:100%; max-width:100%">
               </div>
-              <img src='images/bulkcarrier.gif' style="width:100%; height:100%; max-width:100%">
+              <img src='images/smooth_loco_mani.gif' style="width:100%; height:100%; max-width:100%">
             </div>
             <script type="text/javascript">
               function bulkcarrier_start() {
-                document.getElementById('images/bulkcarrier.png').style.opacity = "0";
+                document.getElementById('images/smooth_loco_mani.png').style.opacity = "0";
               }
               function bulkcarrier_stop() {
-                document.getElementById('images/bulkcarrier.png').style.opacity = "1";
+                document.getElementById('images/smooth_loco_mani.png').style.opacity = "1";
               }
               bulkcarrier_stop()
             </script>
           </td>
           <td style="padding:20px;width:70%;vertical-align:middle">
-            <papertitle>Hatch Identification Method for Bulk Carrier </papertitle>
+            <papertitle>Smooth loco-manipulation</papertitle>
             <p style="margin:10px 0 5px 0px;font-size: 15px;">
-              Contributed to the perception module for automatic coal loading at Tianjin Port, demonstrating the practical applicability
-              of the developed approach.
+              Achieving smooth loco-manipulation task execution. The policy is trained to combine the locomotion and manipulation tasks, resulting in a smooth integration of locomotion and manipulation.
             </p>
           </td>
         </tr>
 
+
         <tr onmouseout="antiphoto_stop()" onmouseover="antiphoto_start()" >
           <td style="padding:20px;width:30%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='images/antiphoto.png' style="width:100%; height:100%; max-width:100%">
-                <img src='images/antiphoto.png' style="width:100%; height:100%; max-width:100%">
+              <div class="two" id='images/parallel.png' style="width:100%; height:100%; max-width:100%">
+                <img src='images/parallel.png' style="width:100%; height:100%; max-width:100%">
               </div>
-              <img src='images/antiphoto.gif' style="width:100%; height:100%; max-width:100%">
+              <img src='images/parallel.gif' style="width:100%; height:100%; max-width:100%">
             </div>
             <script type="text/javascript">
               function antiphoto_start() {
-                document.getElementById('images/antiphoto.png').style.opacity = "0";
+                document.getElementById('images/parallel.png').style.opacity = "0";
               }
               function antiphoto_stop() {
-                document.getElementById('images/antiphoto.png').style.opacity = "1";
+                document.getElementById('images/parallel.png').style.opacity = "1";
               }
               antiphoto_stop()
             </script>
           </td>
           <td style="padding:20px;width:70%;vertical-align:middle">
-            <papertitle>Anti-photographic Detection Algorithm Based on Semi-supervised Learning </papertitle>
+            <papertitle>Parallel Trainning in Issac Gym</papertitle>
             <p style="margin:10px 0 5px 0px;font-size: 15px;">
-              Developed a system with good generalizability and accuracy for detecting various photographic equipment, including
-              different styles of phones, cameras, monitors, etc.
+              Our policy is trained in parallel in Issac Gym with domain randomization and observation noise. We adopt the insight of Teacher-Student framwork and curriculum learning to train the policy.
             </p>
           </td>
         </tr>
@@ -207,25 +205,25 @@
         <tr onmouseout="curling_stop()" onmouseover="curling_start()" >
           <td style="padding:20px;width:30%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='images/curling.png' style="width:100%; height:100%; max-width:100%">
-                <img src='images/curling.png' style="width:100%; height:100%; max-width:100%">
+              <div class="two" id='images/x_axis_chicken_head.png' style="width:100%; height:100%; max-width:100%">
+                <img src='images/x_axis_chicken_head.png' style="width:100%; height:100%; max-width:100%">
               </div>
-              <img src='images/curling.gif' style="width:100%; height:100%; max-width:100%">
+              <img src='images/x_axis_chicken_head.gif' style="width:100%; height:100%; max-width:100%">
             </div>
             <script type="text/javascript">
               function curling_start() {
-                document.getElementById('images/curling.png').style.opacity = "0";
+                document.getElementById('images/x_axis_chicken_head.png').style.opacity = "0";
               }
               function curling_stop() {
-                document.getElementById('images/curling.png').style.opacity = "1";
+                document.getElementById('images/x_axis_chicken_head.png').style.opacity = "1";
               }
               curling_stop()
             </script>
           </td>
           <td style="padding:20px;width:70%;vertical-align:middle">
-            <papertitle>Table Curling Robot </papertitle>
+            <papertitle>X-axis chicken-head motion </papertitle>
             <p style="margin:10px 0 5px 0px;font-size: 15px;">
-              Created a smart robot car which can play curling on table by integrating visual processing, decision making and control.
+              Using NMPC+WBC to achieve the X-axis chicken-head motion of the quadrupedal robot.
             </p>
           </td>
         </tr>
@@ -233,25 +231,25 @@
         <tr onmouseout="braintumour_stop()" onmouseover="braintumour_start()" >
           <td style="padding:20px;width:30%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='images/braintumour.png' style="width:100%; height:100%; max-width:100%">
-                <img src='images/braintumour.png' style="width:100%; height:100%; max-width:100%">
+              <div class="two" id='images/yaw_chicken_head.png' style="width:100%; height:100%; max-width:100%">
+                <img src='images/yaw_chicken_head.png' style="width:100%; height:100%; max-width:100%">
               </div>
-              <img src='images/braintumour.gif' style="width:100%; height:100%; max-width:100%">
+              <img src='images/yaw_chicken_head.gif' style="width:100%; height:100%; max-width:100%">
             </div>
             <script type="text/javascript">
               function braintumour_start() {
-                document.getElementById('images/braintumour.png').style.opacity = "0";
+                document.getElementById('images/yaw_chicken_head.png').style.opacity = "0";
               }
               function braintumour_stop() {
-                document.getElementById('images/braintumour.png').style.opacity = "1";
+                document.getElementById('images/yaw_chicken_head.png').style.opacity = "1";
               }
               braintumour_stop()
             </script>
           </td>
           <td style="padding:20px;width:70%;vertical-align:middle">
-            <papertitle>Biomedical Image Segmentation for Brain Tumour </papertitle>
+            <papertitle>Yaw-axis chicken-head motion</papertitle>
             <p style="margin:10px 0 5px 0px;font-size: 15px;">
-              Implemented a brain tumour segmentation pipeline with modified U-net and designed dice loss.
+              Using NMPC+WBC to achieve the Yaw-axis chicken-head motion of the quadrupedal robot.
             </p>
           </td>
         </tr>
@@ -259,25 +257,26 @@
         <tr onmouseout="PTZ_stop()" onmouseover="PTZ_start()" >
           <td style="padding:20px;width:30%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='images/PTZ.png' style="width:100%; height:100%; max-width:100%">
-                <img src='images/PTZ.png' style="width:100%; height:100%; max-width:100%">
+              <div class="two" id='images/terrain_car.png' style="width:100%; height:100%; max-width:100%">
+                <img src='images/terrain_car.png' style="width:100%; height:100%; max-width:100%">
               </div>
-              <img src='images/PTZ.gif' style="width:100%; height:100%; max-width:100%">
+              <img src='images/terrain_car.gif' style="width:100%; height:100%; max-width:100%">
             </div>
             <script type="text/javascript">
               function PTZ_start() {
-                document.getElementById('images/PTZ.png').style.opacity = "0";
+                document.getElementById('images/terrain_car.png').style.opacity = "0";
               }
               function PTZ_stop() {
-                document.getElementById('images/PTZ.png').style.opacity = "1";
+                document.getElementById('images/terrain_car.png').style.opacity = "1";
               }
               PTZ_stop()
             </script>
           </td>
           <td style="padding:20px;width:70%;vertical-align:middle">
-            <papertitle>Intelligent Vision PTZ for Face Tracking and Alerting </papertitle>
+            <papertitle>All Terrain Car</papertitle>
             <p style="margin:10px 0 5px 0px;font-size: 15px;">
-              Built an 2-Dof Vision PTZ capable of face recognition, tracking and alerting.
+              We designed and programmed an all-terrain vehicle in the China Robotics and artificial intelligence competition. 
+              The car can drive on different terrains to complete the tasks specified by the organizers.
             </p>
           </td>
         </tr>
@@ -285,25 +284,26 @@
         <tr onmouseout="multileg_stop()" onmouseover="multileg_start()" >
           <td style="padding:20px;width:30%;vertical-align:middle">
             <div class="one">
-              <div class="two" id='images/multileg.png' style="width:100%; height:100%; max-width:100%">
-                <img src='images/multileg.png' style="width:100%; height:100%; max-width:100%">
+              <div class="two" id='images/xylophone.png' style="width:100%; height:100%; max-width:100%">
+                <img src='images/xylophone.png' style="width:100%; height:100%; max-width:100%">
               </div>
-              <img src='images/multileg.gif' style="width:100%; height:100%; max-width:100%">
+              <img src='images/xylophone.gif' style="width:100%; height:100%; max-width:100%">
             </div>
             <script type="text/javascript">
               function multileg_start() {
-                document.getElementById('images/multileg.png').style.opacity = "0";
+                document.getElementById('images/xylophone.png').style.opacity = "0";
               }
               function multileg_stop() {
-                document.getElementById('images/multileg.png').style.opacity = "1";
+                document.getElementById('images/xylophone.png').style.opacity = "1";
               }
               multileg_stop()
             </script>
           </td>
           <td style="padding:20px;width:70%;vertical-align:middle">
-            <papertitle>Multi-legged Bionic Robot </papertitle>
+            <papertitle>Robotic arm motion planning </papertitle>
             <p style="margin:10px 0 5px 0px;font-size: 15px;">
-              Built a quadrupedal/hexapedal robot system capable of avoiding obstacles and line following.
+              Play the xylophone. Through the motion planning in the Cartesian space of the robotic arm, 
+              it is transformed into the joint trajectory in the joint space, and finally the motion control of the robotic arm is realized.
             </p>
           </td>
         </tr>
@@ -468,7 +468,7 @@
             <p style="text-align:left;font-size:14px;">
               Modified version of template from <a style="font-size:14px ;" href="https://jonbarron.info/">here</a>. <a style="font-size:14px ;" href="https://anxingxiao.com/" >Thanks!</a>
               <span style="float:right;">
-                Last updated: 30 Nov 2023
+                Last updated: 13 Aug. 2024
               </span>
             </p>
           </td>
